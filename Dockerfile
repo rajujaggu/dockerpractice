@@ -1,4 +1,4 @@
-FROM maven:3.8.6-amazoncorretto-11 as build
+FROM maven:3.8.6 as build
 RUN git clone https://github.com/rajujaggu/openmrs-core.git && \
     cd openmrs-core && \
     mvn package
